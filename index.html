@@ -1,145 +1,170 @@
+
 <!DOCTYPE html>
 <html lang="pt">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Volcano Eye Azores</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <title>Volcano Eye Azores – Souvenirs Premium dos Açores</title>
+  <meta name="description" content="Souvenirs e roupa com alma dos Açores. Marca açoriana de luxo com envio internacional. Volcano Eye Azores – a identidade das ilhas em forma de estilo.">
+  <meta name="keywords" content="souvenirs açores, loja souvenirs são miguel, moda açoriana, volcano eye, presentes dos açores, recordações açorianas">
+  <meta name="author" content="Volcano Eye Azores">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Playfair+Display&display=swap" rel="stylesheet">
   <style>
-    * { margin: 0; padding: 0; box-sizing: border-box; }
     body {
+      margin: 0;
       font-family: 'Montserrat', sans-serif;
-      background: #fff;
-      color: #000;
-      line-height: 1.6;
+      background-color: #000;
+      color: #fff;
     }
     header {
-      background: #000;
-      color: #fff;
       padding: 20px;
       text-align: center;
+      background: #000;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
     }
     header h1 {
-      font-size: 2.5rem;
+      font-family: 'Playfair Display', serif;
+      font-size: 2.8rem;
+      margin: 0;
       letter-spacing: 2px;
-    }
-    nav {
-      display: flex;
-      justify-content: center;
-      gap: 30px;
-      margin-top: 10px;
     }
     nav a {
       color: #fff;
+      margin: 0 15px;
       text-decoration: none;
-      font-weight: bold;
+      font-weight: 600;
     }
     .hero {
-      height: 90vh;
-      background: url('https://source.unsplash.com/1600x900/?azores,volcano,fashion') center/cover no-repeat;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      text-align: center;
-      color: #fff;
+      height: 95vh;
+      position: relative;
+      overflow: hidden;
+    }
+    .hero video {
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      z-index: -1;
     }
     .hero h2 {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
       font-size: 3rem;
-      background: rgba(0, 0, 0, 0.5);
-      padding: 20px;
+      background: rgba(0,0,0,0.6);
+      padding: 20px 40px;
+      font-family: 'Playfair Display', serif;
     }
     section {
       padding: 60px 20px;
       max-width: 1000px;
       margin: 0 auto;
     }
-    .about h2, .products h2, .contact h2 {
+    h2 {
+      text-align: center;
       font-size: 2rem;
-      margin-bottom: 20px;
-      text-align: center;
-    }
-    .about p {
-      text-align: center;
-      font-size: 1.1rem;
+      font-family: 'Playfair Display', serif;
     }
     .products-grid {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 20px;
+      gap: 30px;
       margin-top: 40px;
     }
     .product {
-      border: 1px solid #ccc;
-      padding: 10px;
+      background: #111;
+      padding: 15px;
       text-align: center;
+      transition: transform 0.3s ease;
+    }
+    .product:hover {
+      transform: scale(1.05);
     }
     .product img {
       max-width: 100%;
+      border: 2px solid #333;
     }
     footer {
-      background: #000;
-      color: #fff;
       text-align: center;
-      padding: 20px;
-    }
-    .social a {
-      color: #fff;
-      margin: 0 10px;
-      text-decoration: none;
-      font-size: 1.2rem;
+      padding: 40px 20px;
+      background: #111;
+      color: #888;
     }
   </style>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [{
+      "@type": "Question",
+      "name": "Onde posso comprar souvenirs típicos dos Açores?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Na Volcano Eye Azores – loja online com envio internacional ou na loja física em São Miguel, Açores."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "A Volcano Eye Azores faz envios internacionais?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Sim. Enviamos para toda a Europa, América do Norte e mais em breve."
+      }
+    }]
+  }
+  </script>
 </head>
 <body>
   <header>
     <h1>Volcano Eye Azores</h1>
     <nav>
-      <a href="#about">Sobre</a>
-      <a href="#products">Colecção</a>
-      <a href="#contact">Contacto</a>
+      <a href="#sobre">Sobre</a>
+      <a href="#colecao">Colecção</a>
+      <a href="#contacto">Contacto</a>
     </nav>
   </header>
 
   <section class="hero">
+    <video autoplay muted loop>
+      <source src="https://cdn.coverr.co/videos/coverr-volcanic-eruption-6373/1080p.mp4" type="video/mp4">
+    </video>
     <h2>Moda nascida do magma dos Açores</h2>
   </section>
 
-  <section id="about" class="about">
+  <section id="sobre">
     <h2>Sobre a Marca</h2>
-    <p>Volcano Eye Azores é uma marca que nasce da força bruta dos Açores, onde o minimalismo encontra a energia crua das ilhas. Criamos roupa com identidade e alma açoriana.</p>
+    <p style="text-align:center; max-width:700px; margin:auto;">Mais do que souvenirs. Somos fragmentos de rocha, suor e alma. A Volcano Eye Azores nasce da energia bruta de São Miguel e transforma-a em estilo, minimalismo e manifesto.</p>
   </section>
 
-  <section id="products" class="products">
+  <section id="colecao">
     <h2>Colecção</h2>
     <div class="products-grid">
       <div class="product">
-        <img src="https://source.unsplash.com/400x400/?tshirt,black" alt="Produto 1">
-        <p>T-shirt Lava</p>
+        <img src="https://source.unsplash.com/400x500/?black,tshirt" alt="T-shirt Vulcânica">
+        <p>T-shirt Vulcânica</p>
       </div>
       <div class="product">
-        <img src="https://source.unsplash.com/400x400/?sweatshirt,minimal" alt="Produto 2">
+        <img src="https://source.unsplash.com/400x500/?hoodie,dark" alt="Sweat Terra Negra">
         <p>Sweat Terra Negra</p>
       </div>
       <div class="product">
-        <img src="https://source.unsplash.com/400x400/?fashion,azores" alt="Produto 3">
+        <img src="https://source.unsplash.com/400x500/?jacket,minimal" alt="Casaco Fumaça">
         <p>Casaco Fumaça</p>
       </div>
     </div>
   </section>
 
-  <section id="contact" class="contact">
+  <section id="contacto">
     <h2>Contacto</h2>
-    <p style="text-align: center;">Envia-nos uma mensagem ou fala connosco no Instagram.</p>
-    <p style="text-align: center;"><a href="https://www.instagram.com/volcanoeye_souvenirs_azores/" target="_blank">@volcanoeye_souvenirs_azores</a></p>
+    <p style="text-align: center;">Segue-nos no <a href="https://www.instagram.com/volcanoeye_souvenirs_azores/" target="_blank" style="color:#fff;">@volcanoeye_souvenirs_azores</a></p>
   </section>
 
   <footer>
-    <p>&copy; 2025 Volcano Eye Azores</p>
-    <div class="social">
-      <a href="https://www.instagram.com/volcanoeye_souvenirs_azores/" target="_blank">Instagram</a>
-    </div>
+    &copy; 2025 Volcano Eye Azores – Todos os direitos reservados.
   </footer>
 </body>
 </html>
