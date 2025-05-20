@@ -9,6 +9,7 @@
   <meta name="keywords" content="souvenirs açores, loja souvenirs são miguel, moda açoriana, volcano eye, presentes dos açores, recordações açorianas">
   <meta name="author" content="Volcano Eye Azores">
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Playfair+Display&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
   <style>
     body {
       margin: 0;
@@ -68,12 +69,6 @@
       text-align: center;
       font-size: 2rem;
       font-family: 'Playfair Display', serif;
-    }
-    .products-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 30px;
-      margin-top: 40px;
     }
     .product {
       background: #111;
@@ -140,21 +135,28 @@
     <p style="text-align:center; max-width:700px; margin:auto;">Mais do que souvenirs. Somos fragmentos de rocha, suor e alma. A Volcano Eye Azores nasce da energia bruta de São Miguel e transforma-a em estilo, minimalismo e manifesto.</p>
   </section>
 
-  <section id="colecao">
-    <h2>Colecção</h2>
-    <div class="products-grid">
-      <div class="product">
-        <img src="https://source.unsplash.com/400x500/?black,tshirt" alt="T-shirt Vulcânica">
-        <p>T-shirt Vulcânica</p>
-      </div>
-      <div class="product">
-        <img src="https://source.unsplash.com/400x500/?hoodie,dark" alt="Sweat Terra Negra">
-        <p>Sweat Terra Negra</p>
-      </div>
-      <div class="product">
-        <img src="https://source.unsplash.com/400x500/?jacket,minimal" alt="Casaco Fumaça">
-        <p>Casaco Fumaça</p>
-      </div>
+  <section id="colecao" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 p-8">
+    <h2 class="col-span-full text-center text-2xl font-serif mb-6">Colecção</h2>
+
+    <div class="product flex flex-col items-center bg-[#111] p-4 text-center">
+      <img class="w-full aspect-video object-cover border-2 border-[#333]" src="https://source.unsplash.com/400x225/?black,tshirt" alt="T-shirt Vulcânica">
+      <h3 class="mt-2 text-lg font-semibold">T-shirt Vulcânica</h3>
+      <p class="mt-1">€29.99</p>
+      <button class="snipcart-add-item mt-2 px-4 py-2 bg-blue-600 text-white" data-item-id="tshirt-vulcanica" data-item-price="29.99" data-item-url="#" data-item-name="T-shirt Vulcânica">Comprar</button>
+    </div>
+
+    <div class="product flex flex-col items-center bg-[#111] p-4 text-center">
+      <img class="w-full aspect-video object-cover border-2 border-[#333]" src="https://source.unsplash.com/400x225/?hoodie,dark" alt="Sweat Terra Negra">
+      <h3 class="mt-2 text-lg font-semibold">Sweat Terra Negra</h3>
+      <p class="mt-1">€49.99</p>
+      <button class="snipcart-add-item mt-2 px-4 py-2 bg-blue-600 text-white" data-item-id="sweat-terra-negra" data-item-price="49.99" data-item-url="#" data-item-name="Sweat Terra Negra">Comprar</button>
+    </div>
+
+    <div class="product flex flex-col items-center bg-[#111] p-4 text-center">
+      <img class="w-full aspect-video object-cover border-2 border-[#333]" src="https://source.unsplash.com/400x225/?jacket,minimal" alt="Casaco Fumaça">
+      <h3 class="mt-2 text-lg font-semibold">Casaco Fumaça</h3>
+      <p class="mt-1">€89.99</p>
+      <button class="snipcart-add-item mt-2 px-4 py-2 bg-blue-600 text-white" data-item-id="casaco-fumaca" data-item-price="89.99" data-item-url="#" data-item-name="Casaco Fumaça">Comprar</button>
     </div>
   </section>
 
