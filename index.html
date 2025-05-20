@@ -8,6 +8,10 @@
   <meta name="keywords" content="souvenirs açores, loja souvenirs são miguel, moda açoriana, volcano eye, presentes dos açores, recordações açorianas">
   <meta name="author" content="Volcano Eye Azores">
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Playfair+Display&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://app.snipcart.com">
+  <link rel="preconnect" href="https://cdn.snipcart.com">
+  <link rel="stylesheet" href="https://cdn.snipcart.com/themes/v3.0.31/default/snipcart.css" />
+  <script async src="https://cdn.snipcart.com/themes/v3.0.31/default/snipcart.js"></script>
   <style>
     body {
       margin: 0;
@@ -87,6 +91,14 @@
       max-width: 100%;
       border: 2px solid #333;
     }
+    .product button {
+      margin-top: 10px;
+      background: #e74c3c;
+      border: none;
+      color: #fff;
+      padding: 10px 20px;
+      cursor: pointer;
+    }
     footer {
       text-align: center;
       padding: 40px 20px;
@@ -120,11 +132,12 @@
 <body>
   <header>
     <h1>Volcano Eye Azores</h1>
-    <nav>
-      <a href="#sobre">Sobre</a>
-      <a href="#colecao">Colecção</a>
-      <a href="#contacto">Contacto</a>
-    </nav>
+      <nav>
+        <a href="#sobre">Sobre</a>
+        <a href="#colecao">Colecção</a>
+        <a href="#contacto">Contacto</a>
+        <a href="#" class="snipcart-checkout">Carrinho (<span class="snipcart-items-count"></span>)</a>
+      </nav>
   </header>
 
   <section class="hero">
@@ -141,20 +154,38 @@
 
   <section id="colecao">
     <h2>Colecção</h2>
-    <div class="products-grid">
-      <div class="product">
-        <img src="https://source.unsplash.com/400x500/?black,tshirt" alt="T-shirt Vulcânica">
-        <p>T-shirt Vulcânica</p>
+      <div class="products-grid">
+        <div class="product">
+          <img src="https://source.unsplash.com/400x500/?black,tshirt" alt="T-shirt Vulcânica">
+          <p>T-shirt Vulcânica</p>
+          <button class="snipcart-add-item"
+                  data-item-id="tshirt-vulcanica"
+                  data-item-price="19.99"
+                  data-item-url="https://volcanoeyeazores.github.io/"
+                  data-item-image="https://source.unsplash.com/400x500/?black,tshirt"
+                  data-item-name="T-shirt Vulcânica">Comprar</button>
+        </div>
+        <div class="product">
+          <img src="https://source.unsplash.com/400x500/?hoodie,dark" alt="Sweat Terra Negra">
+          <p>Sweat Terra Negra</p>
+          <button class="snipcart-add-item"
+                  data-item-id="sweat-terra-negra"
+                  data-item-price="39.99"
+                  data-item-url="https://volcanoeyeazores.github.io/"
+                  data-item-image="https://source.unsplash.com/400x500/?hoodie,dark"
+                  data-item-name="Sweat Terra Negra">Comprar</button>
+        </div>
+        <div class="product">
+          <img src="https://source.unsplash.com/400x500/?jacket,minimal" alt="Casaco Fumaça">
+          <p>Casaco Fumaça</p>
+          <button class="snipcart-add-item"
+                  data-item-id="casaco-fumaca"
+                  data-item-price="59.99"
+                  data-item-url="https://volcanoeyeazores.github.io/"
+                  data-item-image="https://source.unsplash.com/400x500/?jacket,minimal"
+                  data-item-name="Casaco Fumaça">Comprar</button>
+        </div>
       </div>
-      <div class="product">
-        <img src="https://source.unsplash.com/400x500/?hoodie,dark" alt="Sweat Terra Negra">
-        <p>Sweat Terra Negra</p>
-      </div>
-      <div class="product">
-        <img src="https://source.unsplash.com/400x500/?jacket,minimal" alt="Casaco Fumaça">
-        <p>Casaco Fumaça</p>
-      </div>
-    </div>
   </section>
 
   <section id="contacto">
@@ -165,5 +196,6 @@
   <footer>
     &copy; 2025 Volcano Eye Azores – Todos os direitos reservados.
   </footer>
+  <div hidden id="snipcart" data-api-key="YOUR_PUBLIC_API_KEY"></div>
 </body>
 </html>
