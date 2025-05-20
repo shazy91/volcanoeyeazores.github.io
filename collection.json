@@ -1,0 +1,6 @@
+[
+  {"id": 1, "title": "T-shirt Vulcânica", "price": 29.90, "image": "https://source.unsplash.com/400x500/?black,tshirt"},
+  {"id": 2, "title": "Sweat Terra Negra", "price": 49.90, "image": "https://source.unsplash.com/400x500/?hoodie,dark"},
+  {"id": 3, "title": "Casaco Fumaça", "price": 79.90, "image": "https://source.unsplash.com/400x500/?jacket,minimal"}
+]
+
