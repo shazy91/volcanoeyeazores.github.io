@@ -9,6 +9,7 @@
   <meta name="keywords" content="souvenirs açores, loja souvenirs são miguel, moda açoriana, volcano eye, presentes dos açores, recordações açorianas">
   <meta name="author" content="Volcano Eye Azores">
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Playfair+Display&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
   <style>
     body {
       margin: 0;
@@ -16,26 +17,7 @@
       background-color: #000;
       color: #fff;
     }
-    header {
-      padding: 20px;
-      text-align: center;
-      background: #000;
-      position: sticky;
-      top: 0;
-      z-index: 1000;
-    }
-    header h1 {
-      font-family: 'Playfair Display', serif;
-      font-size: 2.8rem;
-      margin: 0;
-      letter-spacing: 2px;
-    }
-    nav a {
-      color: #fff;
-      margin: 0 15px;
-      text-decoration: none;
-      font-weight: 600;
-    }
+    /* Additional custom styles remain here. Navigation is styled via Tailwind */
     .hero {
       height: 95vh;
       position: relative;
@@ -119,12 +101,21 @@
   </script>
 </head>
 <body>
-  <header>
-    <h1>Volcano Eye Azores</h1>
-    <nav>
-      <a href="#sobre">Sobre</a>
-      <a href="#colecao">Colecção</a>
-      <a href="#contacto">Contacto</a>
+  <header class="sticky top-0 z-50 bg-black">
+    <nav class="max-w-7xl mx-auto flex items-center justify-between px-4 py-4 text-white">
+      <a href="#" class="flex items-center" aria-label="Volcano Eye">
+        <svg class="w-8 h-8 text-[#ff4500]" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+          <path d="M12 2l3 6h-6l3-6z" />
+          <path d="M4 22h16l-4-10h-8l-4 10z" />
+          <circle cx="12" cy="14" r="3" />
+        </svg>
+      </a>
+      <ul class="flex gap-8 text-sm uppercase">
+        <li><a href="#colecao" class="hover:underline decoration-[#ff4500]">Colecção</a></li>
+        <li><a href="#sobre" class="hover:underline decoration-[#ff4500]">Sobre</a></li>
+        <li><a href="#blog" class="hover:underline decoration-[#ff4500]">Blog</a></li>
+        <li><a href="#carrinho" class="hover:underline decoration-[#ff4500]">Carrinho</a></li>
+      </ul>
     </nav>
   </header>
 
