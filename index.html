@@ -74,18 +74,27 @@
       gap: 30px;
       margin-top: 40px;
     }
-    .product {
+    .product-card {
       background: #111;
       padding: 15px;
       text-align: center;
       transition: transform 0.3s ease;
+      border: 1px solid #333;
+      border-radius: 8px;
+      display: flex;
+      flex-direction: column;
     }
-    .product:hover {
+    .product-card:hover {
       transform: scale(1.05);
     }
-    .product img {
+    .product-card img {
       max-width: 100%;
       border: 2px solid #333;
+    }
+    .product-card .price {
+      color: #ccc;
+      font-weight: 700;
+      margin-top: 10px;
     }
     footer {
       text-align: center;
@@ -142,17 +151,20 @@
   <section id="colecao">
     <h2>Colecção</h2>
     <div class="products-grid">
-      <div class="product">
+      <div class="product-card" data-name="T-shirt Vulcânica" data-price="25" data-img="https://source.unsplash.com/400x500/?black,tshirt">
         <img src="https://source.unsplash.com/400x500/?black,tshirt" alt="T-shirt Vulcânica">
-        <p>T-shirt Vulcânica</p>
+        <p class="name">T-shirt Vulcânica</p>
+        <p class="price">€25</p>
       </div>
-      <div class="product">
+      <div class="product-card" data-name="Sweat Terra Negra" data-price="45" data-img="https://source.unsplash.com/400x500/?hoodie,dark">
         <img src="https://source.unsplash.com/400x500/?hoodie,dark" alt="Sweat Terra Negra">
-        <p>Sweat Terra Negra</p>
+        <p class="name">Sweat Terra Negra</p>
+        <p class="price">€45</p>
       </div>
-      <div class="product">
+      <div class="product-card" data-name="Casaco Fumaça" data-price="80" data-img="https://source.unsplash.com/400x500/?jacket,minimal">
         <img src="https://source.unsplash.com/400x500/?jacket,minimal" alt="Casaco Fumaça">
-        <p>Casaco Fumaça</p>
+        <p class="name">Casaco Fumaça</p>
+        <p class="price">€80</p>
       </div>
     </div>
   </section>
