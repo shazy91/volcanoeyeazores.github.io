@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sobre - Volcano Eye Azores</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Playfair+Display&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Montserrat', sans-serif;
+      background-color: #000;
+      color: #fff;
+    }
+    header {
+      padding: 20px;
+      text-align: center;
+      background: #000;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+    header h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: 2.5rem;
+      margin: 0;
+      letter-spacing: 2px;
+    }
+    nav a {
+      color: #fff;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: 600;
+    }
+    section {
+      padding: 60px 20px;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+    h2 {
+      text-align: center;
+      font-size: 2rem;
+      font-family: 'Playfair Display', serif;
+    }
+    .masonry {
+      column-count: 3;
+      column-gap: 1em;
+    }
+    .masonry-item {
+      break-inside: avoid;
+      margin-bottom: 1em;
+    }
+    .masonry-item img {
+      width: 100%;
+      display: block;
+    }
+    footer {
+      text-align: center;
+      padding: 40px 20px;
+      background: #111;
+      color: #888;
+    }
+    @media (max-width: 700px) {
+      .masonry {
+        column-count: 2;
+      }
+    }
+    @media (max-width: 500px) {
+      .masonry {
+        column-count: 1;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Volcano Eye Azores</h1>
+    <nav>
+      <a href="/">Início</a>
+      <a href="/sobre/">Sobre</a>
+    </nav>
+  </header>
+
+  <section>
+    <h2>Nossa História</h2>
+    <p style="text-align:center; max-width:700px; margin:auto;">Nas profundezas das ilhas nasce a energia que molda cada peça Volcano Eye Azores. Somos uma marca forjada no calor dos vulcões, inspirada pela névoa atlântica e pela força do oceano. Mais do que souvenirs, criamos memórias materiais que capturam a alma destes paraísos.</p>
+    <p style="text-align:center; max-width:700px; margin:auto;">Combinamos minimalismo contemporâneo e tradição açoriana em roupas e objetos que viajam pelo mundo. Cada coleção conta histórias da nossa terra, de antigos pescadores à lava que se torna rocha. Aqui celebramos as origens e olhamos para o futuro, sempre com os olhos voltados para a linha do horizonte.</p>
+  </section>
+
+  <section>
+    <h2>Olhar sobre as Ilhas</h2>
+    <div class="masonry">
+      <div class="masonry-item"><img src="https://source.unsplash.com/600x800/?azores,island" alt="Vista das ilhas"></div>
+      <div class="masonry-item"><img src="https://source.unsplash.com/600x800/?volcano" alt="Vulcão"></div>
+      <div class="masonry-item"><img src="https://source.unsplash.com/600x800/?ocean" alt="Oceano Atlântico"></div>
+      <div class="masonry-item"><img src="https://source.unsplash.com/600x800/?lava" alt="Rochas vulcânicas"></div>
+      <div class="masonry-item"><img src="https://source.unsplash.com/600x800/?mist" alt="Névoa sobre o mar"></div>
+      <div class="masonry-item"><img src="https://source.unsplash.com/600x800/?cliffs" alt="Falésias dos Açores"></div>
+    </div>
+  </section>
+
+  <footer>
+    &copy; 2025 Volcano Eye Azores – Todos os direitos reservados.
+  </footer>
+</body>
+</html>
