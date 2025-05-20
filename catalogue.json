@@ -1,0 +1,26 @@
+[
+  {
+    "sku": "TSHIRT-VULCANICA",
+    "name": "T-shirt Vulcânica",
+    "description": "T-shirt preta inspirada nas erupções açorianas",
+    "image": "https://source.unsplash.com/400x500/?black,tshirt",
+    "price": "29.99",
+    "currency": "EUR"
+  },
+  {
+    "sku": "SWEAT-TERRA-NEGRA",
+    "name": "Sweat Terra Negra",
+    "description": "Sweatshirt escura simbolizando as cinzas vulcânicas",
+    "image": "https://source.unsplash.com/400x500/?hoodie,dark",
+    "price": "59.99",
+    "currency": "EUR"
+  },
+  {
+    "sku": "CASACO-FUMACA",
+    "name": "Casaco Fumaça",
+    "description": "Casaco leve inspirado no vapor das fumarolas",
+    "image": "https://source.unsplash.com/400x500/?jacket,minimal",
+    "price": "89.99",
+    "currency": "EUR"
+  }
+]
